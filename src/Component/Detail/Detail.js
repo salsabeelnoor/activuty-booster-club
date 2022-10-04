@@ -85,7 +85,7 @@ const Detail = ({exerciseDetail, breakTime, addBreakTime}) => {
                 </div>
             </div>
 
-            <button onClick={showToast} className='items-center w-4/5 mt-7 mx-3 py-3 text-sm font-medium text-center text-white bg-[#C71585] rounded-lg hover:bg-[#700764]'>Acitivity Completed</button>
+            <button onClick={showToast} className='items-center w-4/5 mt-7 mx-3 py-3 text-sm mb-10 font-medium text-center text-white bg-[#C71585] rounded-lg hover:bg-[#700764]'>Acitivity Completed</button>
             <ToastContainer/>
 
         </div>
