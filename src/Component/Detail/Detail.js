@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
 import img from '../../Images/profile.jpg';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Detail = ({exerciseDetail, breakTime, addBreakTime}) => {
     let totalTime = 0;
@@ -12,6 +13,9 @@ const Detail = ({exerciseDetail, breakTime, addBreakTime}) => {
     for (const exercise of exerciseDetail){
         totalTime = totalTime + exercise.time;
     }
+
+    const showToast = () => toast("Congratulation! You have completed your activity!")
+
     return (
         <div>
             <div className='flex justify-center lg:justify-start lg:pl-5 py-7'>
@@ -81,7 +85,8 @@ const Detail = ({exerciseDetail, breakTime, addBreakTime}) => {
                 </div>
             </div>
 
-            <button className='items-center w-4/5 mt-7 mx-3 py-3 text-sm font-medium text-center text-white bg-[#C71585] rounded-lg hover:bg-[#700764]'>Acitivity Completed</button>
+            <button onClick={showToast} className='items-center w-4/5 mt-7 mx-3 py-3 text-sm font-medium text-center text-white bg-[#C71585] rounded-lg hover:bg-[#700764]'>Acitivity Completed</button>
+            <ToastContainer/>
 
         </div>
     );
