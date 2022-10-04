@@ -13,8 +13,8 @@ const Activity = () => {
     return (
         <div className='grid lg:grid-cols-layout grid-cols-mobile_layout'>
             <div className=''>
-                <h1 className='pt-20 text-center lg:text-left lg:pl-12 text-2xl font-semibold'>Select Today's Exercise</h1>
-                <div>
+                <h1 className='lg:pt-20 text-center lg:text-left lg:pl-12 text-2xl font-semibold'>Select Today's Exercise</h1>
+                <div className='grid lg:grid-cols-3 lg:gap-2 grid-cols-1'>
                     {
                         exercises.map(exercise => <Exercise
                         key={exercise.id}
@@ -23,7 +23,7 @@ const Activity = () => {
                     }
                 </div>
             </div>
-            <div className='bg-pink-300 min-h-screen'>
+            <div className='bg-pink-300 mt-20 rounded-lg shadow-lg'>
                <Detail></Detail>
             </div>
         </div>
