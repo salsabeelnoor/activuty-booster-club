@@ -26,7 +26,7 @@ const Activity = () => {
     return (
         <div className=''>
             <div className='grid lg:grid-cols-layout grid-cols-mobile_layout'>
-                <div className='bg-pink-300 lg:mt-[150px] mt-20 rounded-lg shadow-lg lg:hidden block md:block'>
+                <div className='bg-pink-300 lg:mt-[150px] mt-20 rounded-lg shadow-lg lg:hidden block md:block md:mx-10'>
                     <Detail
                     exerciseDetail = {exerciseDetail}
                     breakTime={breakTime}
@@ -34,9 +34,9 @@ const Activity = () => {
                     ></Detail>
                 </div>
 
-                <div>
+                <div className=''>
                     <h1 className='lg:pt-20 text-center lg:text-left lg:pl-12 text-2xl pt-16 font-semibold'>Select Today's Exercise</h1>
-                    <div className='grid lg:grid-cols-3 lg:gap-2 grid-cols-1 md:grid-cols-2  '>
+                    <div className='grid lg:grid-cols-3 lg:gap-2 grid-cols-1 md:grid-cols-2 items-center justify-items-center'>
                     {
                         exercises.map(exercise => <Exercise
                         key={exercise.id}
