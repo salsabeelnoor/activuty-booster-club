@@ -1,7 +1,11 @@
 import React from 'react';
 import img from '../../Images/profile.jpg';
 
-const Detail = () => {
+const Detail = ({exerciseDetail}) => {
+    let totalTime = 0;
+    for (const exercise of exerciseDetail){
+        totalTime = totalTime + exercise.time;
+    }
     return (
         <div>
             <div className='flex justify-center lg:justify-start lg:pl-5 py-7'>
@@ -32,19 +36,29 @@ const Detail = () => {
                 <h1 className='text-xl font-medium text-left pl-4 pt-7 pb-5'>Add A Break</h1>
                 <div className='flex bg-pink-200 drop-shadow-md rounded-lg mx-4 justify-around py-3'>
                     <div className='bg-gray-300 rounded-full p-2 hover:bg-[#e864b8]'>
+                        <button>
                         <p className='font-semibold'>10s</p>
+                        </button>
                     </div>
                     <div className='bg-gray-300 rounded-full p-2 hover:bg-[#e864b8]'>
-                        <p className='font-semibold'>20s</p>
+                        <button>
+                            <p className='font-semibold'>20s</p>
+                        </button>
                     </div>
                     <div className='bg-gray-300 rounded-full p-2 hover:bg-[#e864b8]'>
-                        <p className='font-semibold'>30s</p>
+                        <button>
+                            <p className='font-semibold'>30s</p>
+                        </button>
                     </div>
                     <div className='bg-gray-300 rounded-full p-2 hover:bg-[#e864b8]'>
-                        <p className='font-semibold'>40s</p>
+                        <button>
+                            <p className='font-semibold'>40s</p>
+                        </button>
                     </div>
                     <div className='bg-gray-300 rounded-full p-2 hover:bg-[#e864b8]'>
-                        <p className='font-semibold'>50s</p>
+                        <button>
+                            <p className='font-semibold'>50s</p>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -53,7 +67,7 @@ const Detail = () => {
                 <h1 className='text-xl font-medium text-left pl-4 pt-7 pb-5'>Exercise Details</h1>
                 <div className='flex bg-pink-200 drop-shadow-md rounded-lg mx-4 py-3 justify-between px-4'>
                     <h1 className='text-xl font-semibold'>Exercise Time</h1>
-                    <p>yelo</p>
+                    <p>{totalTime}<span className='text-gray-500'>seconds</span></p>
                 </div>
                 <div className='flex bg-pink-200 drop-shadow-md rounded-lg mx-4 mt-5 py-3 justify-between px-4'>
                     <h1 className='text-xl font-semibold'>Break Time</h1>

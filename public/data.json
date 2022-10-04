@@ -3,6 +3,7 @@
       "id": "633b072fc86c5e835a523ce3",
       "name": "Jumping Jacks",
       "time": 26,
+      "age": 15,
       "information": "This is a warm up cardio exercise that will increase your stamina and keep you lifted throughout your exercise",
       "image": "https://media.istockphoto.com/photos/she-never-skips-a-warm-up-picture-id842972604?k=20&m=842972604&s=612x612&w=0&h=yn8HoRWV53DpU9HrE0E8XBsk_J9OwithvsZoBJ_q6eQ="
     },
@@ -10,6 +11,7 @@
       "id": "633b072fa38032e3ffdccff7",
       "name": "Abdominal Crunches",
       "time": 32,
+      "age": 20,
       "information": "Crunches help you build muscle. This exercise strengthens your core, which includes lower back muscles & obliques",
       "image": "https://media.gettyimages.com/photos/fit-black-man-doing-ab-exercises-picture-id1298870077?s=612x612"
     },
@@ -17,6 +19,7 @@
       "id": "633b072fac91c3be170b8248",
       "name": "Russian Twist",
       "time": 17,
+      "age": 20,
       "information": "This is an effective way to build your core and shoulders. It is popular for athletes. Makes strong shoulders",
       "image": "https://media.istockphoto.com/photos/woman-doing-russian-twists-with-a-medicine-ball-picture-id1363075272?k=20&m=1363075272&s=612x612&w=0&h=0cQh86x0VoXLJizQD788k5nmNFLrr4-JcQfpj5u6PMQ="
     },
@@ -24,6 +27,7 @@
       "id": "633b072f48969baefcec89a9",
       "name": "Mountain Climber",
       "time": 12,
+      "age": 20,
       "information": "This is a good exercise for targeting your whole body and for building cardio endurance and strength.",
       "image": "https://hips.hearstapps.com/hmg-prod/images/sportswoman-doing-sit-ups-with-medicine-ball-on-royalty-free-image-1579877270.jpg"
     },
@@ -31,6 +35,7 @@
       "id": "633b072fb00cc09416aadfad",
       "name": "Plank",
       "time": 42,
+      "age": 18,
       "information": "This exercise works on the obliques, helps to build core strength, engages muscle in the upper back",
       "image": "https://media.istockphoto.com/photos/young-sporty-woman-standing-in-plank-pose-on-fitness-mat-picture-id1168143615?k=20&m=1168143615&s=612x612&w=0&h=ZQonAdu2b-JMLDvH06ZoKaZS-lXAsvUOC1dDGq5IqX4="
     },
@@ -38,6 +43,7 @@
       "id": "633b072f562ab752e9c16785",
       "name": "Leg Raises",
       "time": 28,
+      "age": 22,
       "information": "This helps to lose weight from the legs, lower abdomen. Tones and strengthens muscles and glutes.",
       "image": "https://media.istockphoto.com/photos/for-firm-abdomen-picture-id1047643238?k=20&m=1047643238&s=612x612&w=0&h=AgQqKYPu0xsjj25ZOYyGBhi-ggMEwhz7-t8Twjc10zQ="
     }

@@ -5,11 +5,18 @@ import './Activity.css'
 
 const Activity = () => {
     const [exercises, setExercise] = useState([]);
+    const [exerciseDetail, setExerciseDetail ] = useState([]);
     useEffect(() => {
         fetch('data.json')
         .then(res => res.json())
         .then(data => setExercise(data));
     }, []);
+
+    const addExerciseTime = (selectedExercise) => {
+        let newExerciseDetail = [];
+        newExerciseDetail = [...exerciseDetail, selectedExercise];
+        setExerciseDetail(newExerciseDetail);
+    }
     return (
         <div className='grid lg:grid-cols-layout grid-cols-mobile_layout'>
             <div className=''>
@@ -19,12 +26,15 @@ const Activity = () => {
                         exercises.map(exercise => <Exercise
                         key={exercise.id}
                         exercise={exercise}
+                        addExerciseTime = {addExerciseTime}
                         ></Exercise>)
                     }
                 </div>
             </div>
             <div className='bg-pink-300 mt-20 rounded-lg shadow-lg'>
-               <Detail></Detail>
+               <Detail
+               exerciseDetail = {exerciseDetail}
+               ></Detail>
             </div>
         </div>
     );
