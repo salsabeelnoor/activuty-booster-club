@@ -31,7 +31,7 @@ const Activity = () => {
                     }
                 </div>
             </div>
-            <div className='bg-pink-300 mt-20 rounded-lg shadow-lg'>
+            <div className='bg-pink-300 lg:mt-[150px] mt-20 rounded-lg shadow-lg'>
                <Detail
                exerciseDetail = {exerciseDetail}
                ></Detail>
