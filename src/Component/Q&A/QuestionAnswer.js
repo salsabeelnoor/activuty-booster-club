@@ -2,7 +2,7 @@ import React from 'react';
 
 const QuestionAnswer = () => {
     return (
-        <div className='text-left pl-16 pt-7'>
+        <div className='text-left lg:pl-16 pt-7 px-7'>
             <h1 className='text-xl font-bold'>How Does React Work?</h1>
             <p className='text-medium pt-2'>React uses a declarative paradigm that makes it easier to reason about your application and aims to be both efficient and flexible. It designs simple views for each state in your application, and React will efficiently update and render just the right component when your data changes. The declarative view makes your code more predictable and easier to debug. A React application is made of multiple components, each responsible for rendering a small, reusable piece of HTML. Components can be nested within other components to allow complex applications to be built out of simple building blocks. A component may also maintain an internal state – for example, a TabList component may store a variable corresponding to the currently open tab.</p>
 
