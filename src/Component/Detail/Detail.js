@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import img from '../../Images/profile.jpg';
 
-const Detail = ({exerciseDetail}) => {
+const Detail = ({exerciseDetail, breakTime, addBreakTime}) => {
     let totalTime = 0;
+    if(!localStorage.getItem("breakTime")){
+        breakTime = 0;
+    }
+    else{
+        breakTime = localStorage.getItem("breakTime");
+    }
     for (const exercise of exerciseDetail){
         totalTime = totalTime + exercise.time;
-    }
-    let addBreakTime = (breakTime) => {
-        let newBreakTime = breakTime;
-        console.log(newBreakTime);
     }
     return (
         <div>
@@ -75,7 +77,7 @@ const Detail = ({exerciseDetail}) => {
                 </div>
                 <div className='flex bg-pink-200 drop-shadow-md rounded-lg mx-4 mt-5 py-3 justify-between px-4'>
                     <h1 className='text-xl font-semibold'>Break Time</h1>
-                    <p></p>
+                    <p>{breakTime} <span className='text-gray-500'>seconds</span></p>
                 </div>
             </div>
 

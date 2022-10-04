@@ -6,6 +6,7 @@ import './Activity.css'
 const Activity = () => {
     const [exercises, setExercise] = useState([]);
     const [exerciseDetail, setExerciseDetail ] = useState([]);
+    const [breakTime, setBreakTime] = useState([0]);
     useEffect(() => {
         fetch('data.json')
         .then(res => res.json())
@@ -16,6 +17,10 @@ const Activity = () => {
         let newExerciseDetail = [];
         newExerciseDetail = [...exerciseDetail, selectedExercise];
         setExerciseDetail(newExerciseDetail);
+    }
+    const addBreakTime = (value) => {
+        localStorage.setItem('breakTime', value);
+        setBreakTime(value);
     }
     return (
         <div className='grid lg:grid-cols-layout grid-cols-mobile_layout'>
@@ -34,6 +39,8 @@ const Activity = () => {
             <div className='bg-pink-300 lg:mt-[150px] mt-20 rounded-lg shadow-lg'>
                <Detail
                exerciseDetail = {exerciseDetail}
+               breakTime={breakTime}
+               addBreakTime = {addBreakTime}
                ></Detail>
             </div>
         </div>
